@@ -23,8 +23,37 @@ textarea:focus{
 
 
 /* IDs */
+#accountCreation{
+    width: auto;
+    height: auto;
+}
+
+.accountCreationRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carouselExampleIndicators{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
 #contentsRowPanelHome{
-    height: 90%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    #contentsRowPanelHome{
+        height: 70vh;
+    }
+}
+
+#issueRow{
+    height: auto;
 }
 
 #getInTouch{
@@ -58,11 +87,11 @@ textarea:focus{
     align-items: center;
 }
 
-#carousel-indicators{
-    margin-top: 1rem;
-}
 
 /* CLASSES */
+/* Carousel Banner */
+
+
 /*Nav bar at the top*/
 .nav-link{
     position: relative;
@@ -337,6 +366,10 @@ li.page-item.active{
 
 
 /* end of issues */
+.create-account-content{
+    width: 90%;
+    margin: auto;
+}
 
 .double_content_form .create-account-content{
     display: none;

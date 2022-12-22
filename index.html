@@ -27,20 +27,20 @@
 
       <!--first row-->
      <div class="row container-xxl">
-
+  
       <!--col for The Pillar Logo-->
       <div class="col-2 col-md-3">
        
-        <a class="navbar-brand d-none d-md-inline" href="index.html">
-        <img src="images/The Pillar Logo - white.png" alt="Bootstrap"  height="50">
+        <a class="navbar-brand d-none d-md-inline" href="/index.html">
+        <img src="/images/The Pillar Logo - white.png" alt="The Pillar"  height="50">
         </a>
-
-        <a class="navbar-brand d-md-none" href="index.html">
-          <img src="images/The Pillar Logo.png" alt="Bootstrap"  height="50">
+  
+        <a class="navbar-brand d-md-none" href="/index.html">
+          <img src="/images/The Pillar Logo.png" alt="The Pilar"  height="50">
         </a>
       </div>
-
-
+  
+  
       <!--col for the search bar-->
       <div class="col-7 col-md-5">
         <form class="d-flex me-md-5" role="search">
@@ -48,20 +48,16 @@
           <button class="btn btn-search btn-outline-secondary" type="submit">Search</button>
         </form>
       </div>
-
-
+  
+  
     <!-- Button trigger modal -->
     <div class="col-2 d-flex justify-content-end">
       <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <i class="bi bi-person-circle text-secondary fs-1"> </i>
-            </button>
-    </div>
-
-
-     
+     <i class="bi bi-person-circle text-secondary fs-1"> </i>
+      </button>
    
     </nav>
-
+  
       
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -106,33 +102,70 @@
       <!--end of Modal-->
       
     </div>
-
+  
     <!--End of first Nav-->
-
-
-
+  
+  
+  
       <!--Start of second nav-->
-    <nav class="navbar nav-pills nav-fill navbar-expand-md bg-light justify-content-center d-flex flex-column bottom-shadow sticky-top" id="nav-links">
-
-      <!--second row for the links-->
-      <div class="row container-lg mt-1">
-       <div class="col justify-content-center">
-           <ul class="col navbar-nav fw-bold justify-content-between d-flex flex-row">
+      <nav class="navbar nav-pills nav-fill navbar-expand-sm d-flex justify-content-md-center bg-light bottom-shadow sticky-fixed"     
+      id="nav-links">
+      <button class="navbar-toggler w-100 d-flex justify-content-between ms-3 me-3 d-inline d-sm-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fw-bold m-auto">Menu</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+  
+     
+      <div class="row container-lg">
+       <div class="col collapse navbar-collapse" id="main-nav">
+           <ul class="col navbar-nav fw-bold">
              <li class="nav-item">
-               <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+               <a class="nav-link nav-position" href="../index.html">HOME</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#articles">ARTICLES</a>
+               <a class="nav-link nav-position" href="/html files/article.html">ARTICLES</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#issues">ISSUES</a>
+               <a class="nav-link nav-position" href="../html files/issue.html">ISSUES</a>
+             </li>
+             <li class="nav-item dropdown d-none d-sm-inline">
+               <a class="nav-link nav-position" href="aboutPage.html">ABOUT US <i class="bi bi-chevron-down ms-1"></i> </a>
+              <ul class="dropdown-content bg-light">
+                <li>
+                  <a href="#">The Pillar</a>
+                </li>
+                <li>
+                  <a href="#">Membership and Alliance</a>
+                </li>
+                <li>
+                  <a href="#">Editorial Board</a>
+                </li>
+              </ul>
+             </li>
+  
+  
+             <li class="nav-item d-sm-none">
+              <a class="nav-link nav-position" href="aboutPage.html">ABOUT US <i class="bi bi-chevron-down ms-1 d-none d-md-inline"></i> </a>
+              <ul class="list-content bg-light">
+                <li>
+                  <a href="#">The Pillar</a>
+                </li>
+                <li>
+                  <a href="#">Membership and Alliance</a>
+                </li>
+                <li>
+                  <a href="#">Editorial Board</a>
+                </li>
+              </ul>
+             </li>
+  
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="/html files/aboutPage.html">ABOUT US</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="/html files/contactus.html">CONTACT US</a>
+               <a class="nav-link nav-position  active" aria-current="page" href="contactus.html">CONTACT US</a>
              </li> 
+             </ul>
          </div>
       </div>
     </nav>
@@ -142,87 +175,17 @@
 
 
     <!--Start of Carousel-->
-    <div id="mainNewsCarousel" class="carousel carousel-dark slide bg-light" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#mainNewsCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="mainNewsCarouselSlide1"></button>
-        <button type="button" data-bs-target="#mainNewsCarousel" data-bs-slide-to="1" aria-label="mainNewsCarouselSlide2"></button>
-        <button type="button" data-bs-target="#mainNewsCarousel" data-bs-slide-to="2" aria-label="mainNewsCarouselSlide3"></button>
-      </div>
-
-
-      <div class="carousel-inner container-xxl" style="height: 75vh;">
-        <div class="carousel-item h-100 active" id="mainNewsCarouselSlide1">
-
-          <div class="d-flex justify-content-center align-items-center h-100">
-             <div class="row container-md d-flex flex-row h-75 bg-light">
-
-            <div class="col-md-7 h-auto h-md-100">
-              <small class="fs-5 fw-bold fst-italic">CATEGORY</small>
-              <hr>
-              <h1 class="display-3 fw-bold">TITLE1 OF THE ARTICLE</h1>
-              <p class="lead d-none d-md-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga officiis cumque quasi, distinctio facilis eveniet placeat praesentium? Ducimus, corporis distinctio nemo iure similique rerum sequi illo, quis debitis molestias doloremque veniam laboriosam deserunt. Fuga non maiores corporis, quaerat mollitia temporibus nesciunt. Minima recusandae modi obcaecati reiciendis veniam eaque dolores!</p>
-            </div>
-
-            <!-- <div class="col-12 col-md-5 h-100 bg-primary">
-                
-            </div> -->
-            <img class="col-12 col-md-5 h-100" src="/images/ateKim.jpg" alt="">
-          </div>
-          </div>
-         
-        </div>
-
-        
-        <div class="carousel-item h-100" id="mainNewsCarouselSlide2">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="row container-md h-75 bg-light">
-
-           <div class="col-md-7 h-auto h-md-100">
-            <small class="fs-5 fw-bold fst-italic">CATEGORY</small>
-             <hr>
-             <h1 class="display-3 fw-bold">TITLE2 OF THE ARTICLE</h1>
-             <p class="lead d-none d-md-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga officiis cumque quasi, distinctio facilis eveniet placeat praesentium? Ducimus, corporis distinctio nemo iure similique rerum sequi illo, quis debitis molestias doloremque veniam laboriosam deserunt. Fuga non maiores corporis, quaerat mollitia temporibus nesciunt. Minima recusandae modi obcaecati reiciendis veniam eaque dolores!</p>
-           </div>
-
-           <img class="col-12 col-md-5 h-100" src="/images/ateKim.jpg" alt="">
-         </div>
-         </div>
-        </div>
-        <div class="carousel-item h-100 " id="mainNewsCarouselSlide3">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="row container-md h-75 bg-light">
-
-           <div class="col-md-7 h-auto h-md-100">
-            <small class="fs-5 fw-bold fst-italic">CATEGORY</small>
-             <hr>
-             <h1 class="display-3 fw-bold">TITLE3 OF THE ARTICLE</h1>
-             <p class="lead d-none d-md-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga officiis cumque quasi, distinctio facilis eveniet placeat praesentium? Ducimus, corporis distinctio nemo iure similique rerum sequi illo, quis debitis molestias doloremque veniam laboriosam deserunt. Fuga non maiores corporis, quaerat mollitia temporibus nesciunt. Minima recusandae modi obcaecati reiciendis veniam eaque dolores!</p>
-           </div>
-
-           <img class="col-12 col-md-5 h-100" src="/images/ateKim.jpg" alt="">
-         </div>
-         </div>
-        </div>
-      </div>
-
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#mainNewsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#mainNewsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    
     <!--end of carousel-->
+
+
+    
 
 
     <!--Start for the latest News-->
 
-    <div class="container-lg my-5" id="contentsPanelHome">
-        <div class="row d-flex justify-content-center" id="contentsRowPanelHome">
+    <div class="container-lg my-5">
+        <div class="row d-flex justify-content-center">
 
           <div class="col-12 col-lg-8 bg-light m-2" id="contentsFirstColumnPanelHome">
             <h1 class="fw-bold">LATEST POSTS</h1>

@@ -95,31 +95,68 @@
   
   
         <!--Start of second nav-->
-        <nav class="navbar nav-pills nav-fill navbar-expand-md bg-light justify-content-center d-flex flex-column bottom-shadow sticky-top" id="nav-links">
+        <nav class="navbar nav-pills nav-fill navbar-expand-sm d-flex justify-content-md-center bg-light bottom-shadow sticky-fixed"     
+      id="nav-links">
+      <button class="navbar-toggler w-100 d-flex justify-content-between ms-3 me-3 d-inline d-sm-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fw-bold m-auto">Menu</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
   
-          <!--second row for the links-->
-          <div class="row container-lg mt-1">
-           <div class="col justify-content-center">
-               <ul class="col navbar-nav fw-bold justify-content-between d-flex flex-row">
-                 <li class="nav-item">
-                   <a class="nav-link" href="../index.html">HOME</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link active" aria-current= "page" href="/html files/article.html">ARTICLES</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="../html files/navbar.html">ISSUES</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="aboutPage.html">ABOUT US</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="contactus.html">CONTACT US</a>
-                 </li> 
-                 </ul>
-             </div>
-          </div>
-        </nav> 
+  
+     
+      <div class="row container-lg">
+       <div class="col collapse navbar-collapse" id="main-nav">
+           <ul class="col navbar-nav fw-bold">
+             <li class="nav-item">
+               <a class="nav-link nav-position" href="../index.html">HOME</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link nav-position  active" aria-current="page" href="/html files/article.html">ARTICLES</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link nav-position" href="../html files/issue.html">ISSUES</a>
+             </li>
+             <li class="nav-item dropdown d-none d-sm-inline">
+               <a class="nav-link nav-position" href="aboutPage.html">ABOUT US <i class="bi bi-chevron-down ms-1"></i> </a>
+              <ul class="dropdown-content bg-light">
+                <li>
+                  <a href="#">The Pillar</a>
+                </li>
+                <li>
+                  <a href="#">Membership and Alliance</a>
+                </li>
+                <li>
+                  <a href="#">Editorial Board</a>
+                </li>
+              </ul>
+             </li>
+  
+  
+             <li class="nav-item d-sm-none">
+              <a class="nav-link nav-position" href="aboutPage.html">ABOUT US <i class="bi bi-chevron-down ms-1 d-none d-md-inline"></i> </a>
+              <ul class="list-content bg-light">
+                <li>
+                  <a href="#">The Pillar</a>
+                </li>
+                <li>
+                  <a href="#">Membership and Alliance</a>
+                </li>
+                <li>
+                  <a href="#">Editorial Board</a>
+                </li>
+              </ul>
+             </li>
+  
+             </li>
+             <li class="nav-item">
+               <a class="nav-link nav-position" href="contactus.html">CONTACT US</a>
+             </li> 
+             </ul>
+         </div>
+      </div>
+    </nav>
+    <!--end of the second nav--> 
 
 
       <div class="container-lg">
