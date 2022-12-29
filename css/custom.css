@@ -88,11 +88,190 @@ textarea:focus{
 }
 
 
-/* CLASSES */
-/* Carousel Banner */
 
+/* CLASSES */
+/* Forgot Password */
+#forgotPasswordContainer{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#forgotPasswordContainer  .forgot-pass-main{
+    display: none;
+}
+
+#forgotPasswordContainer  .forgot-pass-main.active{
+    display: block;
+}
+
+.forgot-pass-main{
+    width: 25vw;
+    height: 70vh;
+    border: 2px solid var(--primary);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+@media screen and (max-width:1200px){
+   .forgot-pass-main{
+    width: 70vw;
+   }
+}
+
+.forgot-pass-main p{
+    text-align: justify;
+}
+
+.icon-forgot-pass{
+    font-size: 4rem;
+    color: var(--secondary);
+}
+
+.form-stack{
+    display: flex;
+    gap: .5rem;
+}
+
+.resend-code{
+    color: var(--secondary);
+}
+
+/* User Profile */
+
+.user-profile-main{
+    height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 2rem;
+    overflow: auto;
+}
+
+.user-profile-options{
+    padding-right: 1rem;
+}
+
+.user-profile-options>.nav-link{
+    margin: .5rem 0;
+}
+
+.user-profile-main-content{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+}
+ 
+
+.tab-content{
+    width: 100%;
+    height: 100%;
+
+}
+
+.user-tab-content, .user-info-content{
+    height: 100%; 
+}
+
+.user-tab-content{
+    padding: 1rem;
+}
+
+.user-account-profile{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--tdark);
+    border-radius: 100%;
+}
+
+.tablist{
+    height: 100%;
+    width: 10rem;
+}
+.tablist>.nav-link.active{
+    font-weight: bold;
+}
+
+@media screen and ( min-width: 768px) {
+    .tablist{
+        padding-right: 1rem;
+       border-right: 2px solid gray;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .tablist{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tablist>.nav-link{
+        justify-content: center;
+        padding: .5rem;
+    }
+
+    .user-info-content{
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* Carousel Banner */
+.c-inner{
+    height: 400px;
+}
+
+@media screen and ( max-width: 576px) {
+    .c-inner{
+        height: 250px;
+    }
+}
+
+.c-button{
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.c-div-button{
+    width: 5rem;
+    transition: all .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.c-div-button:hover{
+    background-color: #fff1e9;
+}
+
+.carousel-indicators > button[type="button"] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: var(--secondary);
+    border: .1rem solid #fff;
+}
+
+.c-item{
+height: inherit;
+}
+
+.c-img{
+    height: 100%;
+object-fit: scale-down;
+}
 
 /*Nav bar at the top*/
+#nav-main-links{
+height: 4rem;
+}
+
+.navbar{
+    z-index: 1000;
+}
 .nav-link{
     position: relative;
     color: var(--tdark);
@@ -365,7 +544,15 @@ li.page-item.active{
 }
 
 
+.pdf-container {
+    height: 90vh;
+    width: 100%;
+    background-color: var(--secondary);
+}
+
 /* end of issues */
+
+
 .create-account-content{
     width: 90%;
     margin: auto;
